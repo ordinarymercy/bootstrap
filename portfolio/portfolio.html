@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Picture Slideshow</title>
+<!-- Bootstrap core CSS-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../styles.css" rel="stylesheet" />
+<script src="../scripts.js"></script>
+<style>
+  .container {
+    width: 500px;
+  }
+</style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../resume/resume.html">Resume</a>
+          </li>        
+  
+          <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+             
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbar-dropdown" role="button" data-bs-toggle="dropdown">
+              Color Theory
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="../color-theory/color-theory-overview.html">Overview</a>
+              <a class="dropdown-item" href="../color-theory/color-theory-themes.html">Themes</a>
+              <a class="dropdown-item" href="../color-theory/color-theory-comparison.html">Comparison</a>
+            </div>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown" role="button" data-bs-toggle="dropdown">
+              Typography
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="../typography/typography-overview.html">Overview</a>
+              <a class="dropdown-item" href="../typography/typography-fonts.html">Fonts</a>
+              <a class="dropdown-item" href="../typography/typography-comparison.html">Comparison</a>
+            </div>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown" role="button" data-bs-toggle="dropdown">
+              Settings
+            </a>
+            <div class="dropdown-menu" id="settingsGroup">
+              <div class="settingsMenu"><a "id="DarkModeToggle" href="javascript:darkMode()">Light / Dark Mode</a><br></div>
+              <div class="settingsMenu"><a class="settingsMenu" href="javascript:changeSizeByBtn('90%')">Small Font</a><br></div>
+              <div class="settingsMenu"><a class="settingsMenu" href="javascript:changeSizeByBtn('120%')">Medium Font</a><br></div>
+              <div class="settingsMenu"><a class="settingsMenu" href="javascript:changeSizeByBtn('160%')">Large Font</a><br></div>
+             </div>
+            </div>
+          </li>
+  
+          <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../contact/contact.html">Contact</a>
+              </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid d-flex justify-content-between">
+    <div class="row">
+      <div class="col-md-4 m-4 align-top">
+
+<div class="container">
+  <div id="my-photo-slideshow" class="carousel slide carousel-fade"
+    data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       <!-- <figure class = "figure">-->
+        <img class="d-block figure-img img-fluid" src="media/magazine-matted.jpg" alt="Magazine Cover" style="max-width: 100 max-height: auto";>
+        <div class="carousel-caption d-none d-md-block" style="color: black;">
+            <h6 style="color: white;">Magazine Cover in Adobe Photoshop</h6>
+
+          <!--<figcaption class="figure-caption">A caption for the above image.</figcaption>-->
+        </div>
+      </div>
+    <!--</figure>-->
+      <div class="carousel-item">
+        <img class="d-block figure-img img-fluid" src="media/bagel-bliss-matted.jpg" alt="Bagel Bliss Logo" style="max-width: 100 max-height: auto";>
+        <div class="carousel-caption d-none d-md-block" style="color: black;"">
+          <h6>Logo created in Adobe Photoshop</h6>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block figure-img img-fluid" src="media/restoration-matted.jpg" alt="Photo Restoration" style="max-width: 100 max-height: auto";>
+        <div class="carousel-caption d-none d-md-block" style="color: black;">
+          <h6>Photo Restoration in Adobe Photoshop.</h6>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img class="d-block figure-img img-fluid" src="media/lucky-lizard-matted.gif" alt="Web Banner" style="max-width: 100 max-height: auto";>
+        <div class="carousel-caption d-none d-md-block" style="color: black;">
+          <h6 style="color: white;">Web Banner in Adobe Animate.</h6>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img class="d-block figure-img img-fluid" src="media/rigging-matted.gif" alt="Rigging" style="max-width: 100 max-height: auto";>
+        <div class="carousel-caption d-none d-md-block" style="color: black;">
+          <br>
+          <br>
+          <br>      
+          <br>
+          <br>
+          <br>    
+          <h6>Simple rigging in Adobe Animate.</h6>
+        </div>
+        </div>
+           
+    </div>
+    <a class="carousel-control-prev" href="#my-photo-slideshow"
+      role="button" data-bs-slide="prev" style="color: black;">
+      <span class="carousel-control-prev-icon" 
+        aria-hidden="true"></span>
+      <!--<span class="visually-hidden">Previous</span>-->
+    </a>
+    <a class="carousel-control-next" href="#my-photo-slideshow"
+      role="button" data-bs-slide="next" style="color: black;">
+      <span class="carousel-control-next-icon" 
+        aria-hidden="true"></span>
+      <!--<span class="visually-hidden">Next</span>-->
+    </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4 m-2 text-align-top">
+  <h1>Portfolio</h1>
+  
+  <p class="b-1 fontSizeClass">Here are a few examples of my work in Adobe Photoshop and Adobe Animate.</p>
+    
+  <p class="fontSizeClass"><b>Magazine Cover:</b> The purpose of the project was to use Adobe Photoshop to  design a fictional magazine cover featuring a made-up celebrity.  I applied a mask to eliminate the background and replaced with a gradient, and added headlines using embossing and drop shadows.  Also I used the patch tool to cover up my arm with a purple sleeve.
+  </p>
+
+  <p class="b-1 fontSizeClass"><b>Bagel Bliss Logo:</b> The purpose of this project is to create a logo for a fictional company, in Adobe Photoshop.  Although not explicitly instructed to do so, I was careful to create a vector image that could maintain crisp lines and clarity at any size, whether it's on a business card or a billboard.</p>
+
+  <p class="b-1 fontSizeClass"><b>Photo Restoration:</b> The goal of this project was to restore an old, creased black and white photograph with Adobe Photoshop. I subscribed to Adobe Stock and discovered two images to use: one for the background and the other as the damaged photograph itself.  I really enjoyed this project!</p>
+
+  <p class="b-1 fontSizeClass"><b>Lucky Lizard Web Banner:</b> In Adobe Animate, I utilized an existing logo of mine and added the animation of the tongue sticking out, catching the fly, and then retracting.  The Animate file also has the banner turning magenta upon hover, but the .gif does not support that.</p> 
+
+  <p class="b-1 fontSizeClass"><b>Rigging:</b> With Adobe Animate, I used the bone tool to animate a simple figure.  The purpose of this project is to demonstrate a basic character performing an animation, and I chose to have a character doing jumping jacks. This animation serves as a straightforward introduction to character animation for beginners.
+  </p> 
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js">
+
+  </script>
+</body>
+</html>
