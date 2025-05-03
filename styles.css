@@ -212,3 +212,9 @@ a.settings{
   font-family: "Six Caps";
   font-size: xx-large;
 }
+
+
+#indent{
+  text-indent: 20px;
+}
+

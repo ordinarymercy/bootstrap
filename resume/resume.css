@@ -204,3 +204,8 @@ a.settings{
 .card-header .collapsed .fa {
   transform: rotate(90deg);
 }
+
+
+#indent{
+  text-indent: 20px;
+}
