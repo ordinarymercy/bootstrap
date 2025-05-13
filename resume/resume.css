@@ -147,7 +147,7 @@ ul.navbar{
 
 .settingsMenu{
   text-indent: 15px !important; 
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   padding-bottom: 10px;
 }
 
@@ -202,5 +202,5 @@ a.settings{
 
 
 #indent{
-  text-indent: 20px;
+  /*text-indent: 20px;*/
 }
