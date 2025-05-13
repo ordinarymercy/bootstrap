@@ -134,7 +134,6 @@ ul.navbar{
 }
 
 #DarkModeToggle{
-  text-underline-position: none;
   color: black !important; 
   font-size: 20px;
   text-indent: 3px !important; 
@@ -157,7 +156,6 @@ ul.navbar{
 .settingsClass{
   text-decoration: none !important;
   font-family: Arial;
-  text-underline-position: none;
   color: black !important;
   font-size: 20px;
   text-indent: 30px !important;
@@ -167,7 +165,6 @@ ul.navbar{
 
 
 #settingsClass a{
-  text-underline-position: none;
   font-size: 20px;
   text-indent: 3px !important;
   color: black !important;
@@ -178,7 +175,6 @@ ul.navbar{
 #settingsGroup a{
   text-decoration: none !important;
   font-family: Arial;
-  text-underline-position: none;
   color: black !important;
   font-size: 20px;
   text-indent: 30px !important;
