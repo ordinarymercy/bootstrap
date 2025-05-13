@@ -49,13 +49,13 @@ margin:0;
 h5{
   font-size: 15px;
   font-weight: normal;
-  font-color: black !important;  
+  color: black !important;  
   }
 
 h6{
 font-size: 20px;
 font-weight: bold;
-font-color: black !important;
+color: black !important;
 /*margin-top: 25px;
 padding-top: 25px;*/
 }
@@ -86,7 +86,7 @@ li{
 #compColors { 
     display: inline-block;
     align-self: self-start;
-    justify-items: justify-content-start; 
+    /*justify-items: justify-content-start;*/ 
 }
 
 #contactFormSubmit{
@@ -98,12 +98,12 @@ li{
 }
 
 float {
-  responsive: true,
-  property: float,
+  responsive: true;
+  property: float;
   values: (
-    start: left,
-    end: right,
-    none: none,
+    start: left;
+    end: right;
+    none: none;
   )
 }
 
@@ -150,10 +150,10 @@ ul.navbar{
 
 #DarkModeToggle{
   text-underline-position: none;
-  text-color: black; !important
+  color: black !important; 
   font-size: 20px;
-  text-indent: 3px; !important
-  color: black; !important
+  text-indent: 3px !important; 
+  color: black !important; 
   text-indent: 10px;
 }
 /*
@@ -163,7 +163,7 @@ ul.navbar{
 
 
 .settingsMenu{
-  text-indent: 15px; !important
+  text-indent: 15px !important; 
   margin-left: 20px;
   padding-bottom: 10px;
 }
@@ -171,13 +171,12 @@ ul.navbar{
 
 
 .settingsClass{
-  text-decoration: none;!important
+  text-decoration: none !important;
   font-family: Arial;
   text-underline-position: none;
-  text-color: black; !important
+  color: black !important; 
   font-size: 20px;
-  text-indent: 30px; !important
-  color: black; !important
+  text-indent: 30px !important;  
   padding-bottom: 10px;
 }
 
@@ -185,26 +184,26 @@ ul.navbar{
 #settingsClass a{
   text-underline-position: none;
   font-size: 20px;
-  text-indent: 3px; !important
-  color: black; !important
+  text-indent: 3px !important; 
+  color: black !important; 
   margin-bottom: 50px;
 }
 
 
 #settingsGroup a{
-  text-decoration: none;!important
+  text-decoration: none !important;
   font-family: Arial;
   text-underline-position: none;
-  color: black; !important
+  color: black !important;
   font-size: 20px;
-  text-indent: 30px; !important
+  text-indent: 30px !important;
   margin-bottom: 50px;
 }
 
 
 
 a.settings{
-  text-indent: 30px;!important
+  text-indent: 30px !important;
 }
 
 
