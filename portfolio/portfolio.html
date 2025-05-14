@@ -12,6 +12,33 @@
   .container {
     width: 500px;
   }
+
+Responsive Google Slides, Google Maps, YouTube & Vimeo 
+iframe[src*="docs.google.com"],
+iframe[src*="google.com/maps"],
+iframe[src*="youtube.com"],
+iframe[src*="player.vimeo.com"]{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}/*
+
+.google-slides-container{
+    position: relative;
+    width: 100%;
+    padding-top: 60%;
+    overflow: hidden;
+}
+
+.google-slides-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+    */
+
 </style>
 
 </head>
@@ -81,26 +108,17 @@
     </div>
   </nav>
 
-<div class="col-md-4 m-2 text-align-top">
+<div class="col-md-7 m-2 text-align-top">
   <h1>Portfolio</h1>
   <a href="writing-sample-first-newsletter-article.pdf">Writing Sample</a>
  
   
-<div class="container-fluid d-flex justify-content-between">
-  <div class="row">
-    <div class="col-md-4">
-
-
-
+<div class="google-slides-container">	
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTeyZzE26jqF2ZHOqMFzL5F7nVbTEq4OF2mCXU30g0Q_FCNvDISH4eeEechS6MicCl53Nw9AXpcQFLK/pubembed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-<div class="col-md-6 m-2 text-align-top"></div>
-
-</div>
 </div>
 </div>
 
-</div>
+
 
 
 
