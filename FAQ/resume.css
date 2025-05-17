@@ -1,0 +1,206 @@
+p {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+ul.navbar-nav a:hover {
+  color: black;
+  font-weight: bold; 
+}  
+
+/*fade in header*/
+h1{animation: 5s ease-out 0s 1 FadeIn;}
+@keyframes FadeIn {
+    0% {
+        opacity:0;
+        }
+    100% {
+        opacity:1;
+        }
+}
+
+.card:hover {
+  box-shadow: none;
+}
+
+.card{
+background-color: bisque;
+color: black;
+}
+
+h2 { /* Contact, Skills, Education, About me, Work Experience */
+  font-family: 'Archivo Narrow', sans-serif;
+  padding-top: 5px;
+  margin: 0px;
+  margin-top: 5px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h3{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+h4{
+  }
+  
+h5{
+  }
+
+h6{
+  font-size: 16px;
+  font-weight: bold;
+  color: black !important;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  margin: 0px;
+  }
+
+  .chevron {
+    float: right;
+    width: 30px;
+    height: 30px;
+  }
+
+
+  
+  ul{
+    padding: 0;
+    padding-bottom: 0;
+    margin: 0;
+    margin-bottom: 0;
+    padding-inline-start: 30px;
+    font-size: 16px;
+    text-decoration:none !important;
+  }
+
+  li{
+    padding: 0;
+    padding-bottom: 0;
+    margin: 0;
+    margin-bottom: 0;
+    padding-inline-start: 30px;
+    list-style-position: inside;
+    text-decoration: none !important;
+  }
+
+
+/*dark mode*/
+container.box{
+  background-color: black;
+  color: white;    
+}
+
+.dark-mode{
+  background-color: black;
+  color: white; 
+  .box{background-color: black; color: white;}
+}
+
+ul.navbar{
+  background-color: black;
+  color: white;  
+}
+
+.navbar{
+  background-color: magenta;
+}
+
+
+.darkNav {
+  background: rgba( 0, 0, 0, 0.25 );
+  color: white;
+}
+
+.darkButton {
+  background-color: white;
+  color: black;
+}
+
+[aria-expanded="true"] .fa-chevron-circle-up, 
+[aria-expanded="false"] .fa-chevron-circle-down {
+    display:none;
+}
+
+.container i {
+  float: right; /* Pushes the icon to the right */
+}
+
+#DarkModeToggle{
+  color: black !important; 
+  font-size: 20px;
+  text-indent: 3px !important; 
+  text-indent: 10px;
+}
+/*
+.navbar a{
+  font-family: 'Comic Sans' !important;
+}*/
+
+
+.settingsMenu{
+  text-indent: 15px !important; 
+  /*margin-left: 20px;*/
+  padding-bottom: 10px;
+}
+
+
+
+.settingsClass{
+  text-decoration: none !important;
+  font-family: Arial;
+  color: black !important;
+  font-size: 20px;
+  text-indent: 30px !important;
+  color: black !important;
+  padding-bottom: 10px;
+}
+
+
+#settingsClass a{
+  font-size: 20px;
+  text-indent: 3px !important;
+  color: black !important;
+  margin-bottom: 50px;
+}
+/* test */
+
+#settingsGroup a{
+  text-decoration: none !important;
+  font-family: Arial;
+  color: black !important;
+  font-size: 20px;
+  text-indent: 30px !important;
+  margin-bottom: 50px;
+}
+
+
+
+a.settings{
+  text-indent: 30px !important;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+  font-family: "Six Caps";
+  font-size: xx-large;
+}
+
+.card-header .fa {
+  transition: .3s transform ease-in-out;
+}
+.card-header .collapsed .fa {
+  transform: rotate(90deg);
+}
+
+
+#indent{
+  /*text-indent: 20px;*/
+}

@@ -1,3 +1,8 @@
+.answer{
+  visibility: hidden;
+}
+
+
 p{
 font-size: 19px;
 }
@@ -149,12 +154,22 @@ ul.navbar{
 }
 
 #DarkModeToggle{
-  text-underline-position: none;
+  /*text-underline-position: none;
   color: black !important; 
-  font-size: 20px;
+  font-size: 14px;
   text-indent: 3px !important; 
   color: black !important; 
-  text-indent: 10px;
+  text-indent: 10px;*/
+
+  text-decoration: none !important;
+  font-family: Arial;
+  text-underline-position: none;
+  color: black !important; 
+  font-size: 16px !important;
+  text-indent: 20px !important;  
+  padding-bottom: 10px;
+
+
 }
 /*
 .navbar a{
@@ -163,8 +178,17 @@ ul.navbar{
 
 
 .settingsMenu{
-  text-indent: 15px !important; 
+ /* font-size: 12px !important;
+  text-indent: 15px; 
   margin-left: 20px;
+  padding-bottom: 10px; */
+
+  text-decoration: none !important;
+  font-family: Arial;
+  text-underline-position: none;
+  color: black !important; 
+  font-size: 16px !important;
+  text-indent: 20px !important;  
   padding-bottom: 10px;
 }
 
@@ -258,3 +282,8 @@ iframe[src*="player.vimeo.com"]{
     width: 100%;
     height: 100%;
 }*/
+
+.container {
+  margin-left: 0!important;
+  margin-right: 0!important;
+}
