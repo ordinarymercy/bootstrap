@@ -1,3 +1,25 @@
+.contact:hover {
+  color: magenta;
+  text-shadow:30px 30px 30px #37e211;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  font-weight:bolder;
+}
+
+.contact {
+  color:black;
+  font-weight: bolder;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+
+
+
 .answer{
   visibility: hidden;
 }
