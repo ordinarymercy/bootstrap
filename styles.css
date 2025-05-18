@@ -1,3 +1,32 @@
+/* Style the links inside the pill navigation menu */
+.pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 2px solid #000; 
+}
+
+/* Change the color of links on mouse-over */
+.pill-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.pill-nav a.active {
+  /*background-color: dodgerblue;*/
+  background-color: magenta;
+  color: black;
+  border-color: black;
+}
+
+
+
+/*
 .contact:hover {
   color: magenta;
   text-shadow:30px 30px 30px #37e211;
@@ -16,7 +45,7 @@
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-
+*/
 
 
 
@@ -228,11 +257,12 @@ ul.navbar{
 
 
 #settingsClass a{
-  text-underline-position: none;
+ /* text-underline-position: none;*/
+  text-decoration: none;
   font-size: 20px;
-  text-indent: 3px !important; 
+  text-indent: 3px; 
   color: black !important; 
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
 }
 
 
@@ -243,10 +273,8 @@ ul.navbar{
   color: black !important;
   font-size: 20px;
   text-indent: 30px !important;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
-
-
 
 a.settings{
   text-indent: 30px !important;

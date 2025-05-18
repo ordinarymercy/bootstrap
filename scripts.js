@@ -58,7 +58,7 @@ function changeSizeByBtn(multiplier) {
     cont.style.fontSize = cont.style.fontsize * Number(multiplier);
 }
 
-/*
+/* next four were commented out*/
 function toggleDisplay(elem) {
   if (getComputedStyle(elem).display === "none") {
     elem.style.display = "block";
@@ -84,7 +84,7 @@ window.addEventListener('load', function(e) {
   });
 
 
- /*let cont = document.getElementById("container");
+ let cont = document.getElementById("container");
 function changeSizeByBtn(size) {
     // Set value of the parameter as fontSize
     cont.style.fontSize = size;
