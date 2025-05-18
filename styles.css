@@ -154,19 +154,19 @@ li{
 }
 
 float {
-  responsive: true;
+  /*responsive: true;
   property: float;
   values: (
     start: left;
     end: right;
     none: none;
-  )
+  )*/
 }
 
 /*dark mode*/
 container.box{
   background-color: black;
-  color: white;    
+ /* color: white; */   
 }
 
 .dark-mode{
@@ -214,7 +214,7 @@ ul.navbar{
 
   text-decoration: none !important;
   font-family: Arial;
-  text-underline-position: none;
+ /* text-underline-position: none;*/
   color: black !important; 
   font-size: 16px !important;
   text-indent: 20px !important;  
@@ -234,24 +234,24 @@ ul.navbar{
   margin-left: 20px;
   padding-bottom: 10px; */
 
-  text-decoration: none !important;
+  text-decoration: none;
   font-family: Arial;
-  text-underline-position: none;
-  color: black !important; 
-  font-size: 16px !important;
-  text-indent: 20px !important;  
+  /*text-underline-position: none;*/
+  color: black; 
+  font-size: 16px;
+  text-indent: 20px;  
   padding-bottom: 10px;
 }
 
 
 
 .settingsClass{
-  text-decoration: none !important;
+  text-decoration: none;
   font-family: Arial;
-  text-underline-position: none;
-  color: black !important; 
+ /* text-underline-position: none;*/
+  color: black; 
   font-size: 20px;
-  text-indent: 30px !important;  
+  text-indent: 30px;  
   padding-bottom: 10px;
 }
 
@@ -261,23 +261,23 @@ ul.navbar{
   text-decoration: none;
   font-size: 20px;
   text-indent: 3px; 
-  color: black !important; 
+  color: black; 
   /*margin-bottom: 50px;*/
 }
 
 
 #settingsGroup a{
-  text-decoration: none !important;
+  text-decoration: none;
   font-family: Arial;
-  text-underline-position: none;
-  color: black !important;
+  /*text-underline-position: none;*/
+  color: black;
   font-size: 20px;
-  text-indent: 30px !important;
+  text-indent: 30px;
   margin-bottom: 10px;
 }
 
 a.settings{
-  text-indent: 30px !important;
+  text-indent: 30px;
 }
 
 
