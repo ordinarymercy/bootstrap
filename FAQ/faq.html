@@ -23,13 +23,64 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 <style>
+
+
 .answer {
   display: none;
-  text-align: justify;
 }
 .collapsible {
   transition: height 0.3s ease-in-out;
 }
+
+.pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 2px solid #000; 
+  margin-left: 0;
+  background-color: magenta;
+}
+
+#contactMe {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 2px solid #000; 
+  margin-left: 50px;
+  background-color: magenta;
+
+.pill-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.pill-nav a.active {
+  background-color: magenta;
+  color: black;
+  border-color: black;
+}
+
+.contactMe {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 2px solid #000; 
+  margin-left: 50px;
+  background-color: magenta;
+}
+
 </style>
 
 <title>FAQ</title>
@@ -39,66 +90,64 @@
 
 <body>
 <nav class="navbar navbar-light navbar-expand-lg">
-    <a class="navbar-brand"  style="text-indent:10px;" href="../index.html">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-content">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="../resume/resume.html">Resume</a>          
-        </li>        
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbar-content">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="../portfolio/portfolio.html"">Portfolio</a>
-            </li>
-           
-        <div class="collapse navbar-collapse" id="navbar-content">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href=faq.html"">FAQ</a>
-            </li>
-   
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown" role="button" data-bs-toggle="dropdown">
-            Settings
-          </a>
-          <div class="dropdown-menu" id="settingsGroup">
-            <div class="settingsMenu"><a class="settingsMenu" "id="DarkModeToggle" href="javascript:darkMode()">Light / Dark Mode</a><br></div>
-            <div class="settingsMenu"><a class="settingsMenu" href="javascript:changeSizeByBtn('90%')">Small Font</a><br></div>
-            <div class="settingsMenu"><a class="settingsMenu" href="javascript:changeSizeByBtn('120%')">Medium Font</a><br></div>
-            <div class="settingsMenu"><a class="settingsMenu" href="javascript:changeSizeByBtn('160%')">Large Font</a><br></div>
-           </div>
-          </div>
-        </li>
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../resume/resume.html">Resume</a>
+          </li>        
+  
+          <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../portfolio/portfolio.html">Portfolio</a>
+              </li>
+             
+                <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
 
-          <ul class="navbar-nav">
-            <li class="pill-nav">
-        <div class="collapse navbar-collapse" id="navbar-content">
-        <div class="pill-nav">
-        <a class="active" href="../contact/contact.html">Contact</a>
-        </li>
-        </ul>
-        </div>
-        </div>
-  </div>
-</nav>
+            <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../about/about.html">About</a>
+              </li>
 
-
-
-
-
-
-
+         <div class="pill-nav">
+        <a class="active" id="contactMe" href="../contact/contact.html">Contact Me</a>
+    </div>
+  </nav>
 
 
   <page size=custom>
 <br>
 <h1 ms-4 style="margin-left:40px;">FAQ</h1>
 <br>
-<br>
+  <div class="row ms-4">
+    <div class="col-md-6"> 
+    <div class="title">
+      <h3 class = "fontSizeClass style= "text-align: justify;">
+          Why do I need a website?
+          <i class="fas fa-chevron-down chevron"></i>
+      </h3>
+      </div>
+      <div class="answer">
+          <p style= "text-align: justify;">
+          A well-designed website will boost your credibility and increase your chances of being chosen over your competitors.  
+          It allows you to showcase your strengths, communicate who you are, what you offer, and why potential customers should choose you.  Many people compare companies online before taking the next step, so it's important that your first impression is a good one!</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <br>
+
   <div class="row ms-4 mt-100;">
     <div class="col-md-6"> 
     <div class="title">
@@ -107,16 +156,13 @@
           <i class="fas fa-chevron-down chevron"></i>
       </h3>
       </div>
-      <div class="smallText answer">
+      <div class="answer">
            I'd prefer a part-time position with an organization, but am willing to work as a freelancer until I find the right position for me.</p>
       </div>
     </div>
     </div>
     </div>
   <br>
-
-
-
 
   <div class="row ms-4">
     <div class="col-md-6"> 
@@ -126,9 +172,9 @@
           <i class="fas fa-chevron-down chevron"></i>
       </h3>
       </div>
-      <div class="smallText answer">
+      <div class="answer">
           <p class = "fontSizeClass style= "text-align: justify;">
-          You should consider hiring me because I excel at asking the right questions to gather the essential information needed to create a website that meets or exceeds your expectations. Additionally, I possess strong organizational skills, utilizing standard naming conventions and folder structures for each client. I have developed this website mostly from the ground up using HTML, CSS, JavaScript, and Bootstrap, without relying on any Content Management Systems like Wix or WordPress.  Imagine what I could design using such a CMS!</p>
+          You should consider hiring me because I excel at asking the right questions to gather the essential information needed to create a website that meets or exceeds your expectations. Additionally, I possess strong organizational skills.  Finally, I have developed this website mostly from the ground up using HTML, CSS, JavaScript, and Bootstrap, without relying on any Content Management Systems like Wix or WordPress.  I can use WordPress as my CMS, and will be able to customize it via code so that you get a bespoke website that suits your needs.</p>
       </div>
     </div>
     </div>
@@ -145,7 +191,7 @@
           <i class="fas fa-chevron-down chevron"></i>
       </h3>
       </div>
-      <div class="smallText answer">
+      <div class="answer">
           <p class = "fontSizeClass style= "text-align: justify;"">
           My ideal client is a small business or individual.</p>
       </div>
@@ -163,9 +209,9 @@
           <i class="fas fa-chevron-down chevron"></i>
       </h3>
       </div>
-      <div class="smallText answer">
+      <div class="answer">
           <p class = "fontSizeClass style= "text-align: justify;"">
-          A simple website with one to four pages will cost $400.  This is a site that includes YOUR content (copy, pictures and video), is mobile and browser optimized.  Note that this does not include costs such as hosting, domain name, SSL, or business email, etc.  If you do not have e-commerce, I'd say budget around $50/month for these costs.</p>
+          A simple website with one to four pages will cost $400.  This is a site that includes YOUR content (copy, pictures and video).  Note that this does not include costs such as hosting, domain name, SSL, or business email, etc.  If you do not have e-commerce, I'd say budget around $50/month for these costs.</p>
       </div>
     </div>
     </div>
@@ -181,7 +227,7 @@
           <i class="fas fa-chevron-down chevron"></i>
       </h3>
       </div>
-      <div class="smallText answer">
+      <div class="answer">
           <p class = "fontSizeClass style= "text-align: justify;"">
           <ol>
         <li>Client Needs Meeting
@@ -212,7 +258,7 @@
           <i class="fas fa-chevron-down chevron"></i>
       </h3>
       </div>
-      <div class="smallText answer">
+      <div class="answer">
           <p class = "fontSizeClass style= "text-align: justify;"">
           Absolutely!</p>
       </div>
@@ -230,7 +276,7 @@
           <i class="fas fa-chevron-down chevron"></i>
       </h3>
       </div>
-      <div class="smallText answer">
+      <div class="answer">
           <p class = "fontSizeClass style= "text-align: justify;"">
            Yes, I can do website maintenance for $50 per hour, billed in half-hour increments.</p>
       </div>
@@ -248,11 +294,11 @@
           <i class="fas fa-chevron-down chevron"></i>
       </h3>
       </div>
-      <div class="smallText answer">
+      <div class="answer">
           <p class = "fontSizeClass contact style= "text-align: justify;">
 
-           <div class="pill-nav">
-            <a class="active" href="contact/contact.html">Contact Me</a>
+             <div class="fontSizeClass pill-nav align-left text-left b-1 fontSizeClass">
+    <a class="active" href="contact/contact.html">Contact Me</a>
             </div>
       </div>
     </div>

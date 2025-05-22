@@ -1,4 +1,4 @@
-/* Style the links inside the pill navigation menu */
+/* Style the links inside the pill navigation menu
 .pill-nav a {
   display: inline-block;
   color: black;
@@ -10,20 +10,30 @@
   border: 2px solid #000; 
 }
 
-/* Change the color of links on mouse-over */
+/* Change the color of links on mouse-over 
 .pill-nav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Add a color to the active/current link */
+/* Add a color to the active/current link 
 .pill-nav a.active {
-  /*background-color: dodgerblue;*/
+  /*background-color: dodgerblue;
   background-color: magenta;
   color: black;
   border-color: black;
 }
 
+#contactMe {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 2px solid #000; 
+  margin-left: 50px; */
 
 
 /*
@@ -46,16 +56,30 @@
   transition: all 0.2s ease-in;
 }
 */
-
+.contactMe {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 2px solid #000; 
+  margin-left: 50px;
+  background-color: magenta;
+}
 
 
 .answer{
   visibility: hidden;
+  text-align: justify;
+  font-size: 28px !important;
 }
 
 
 p{
 font-size: 19px;
+text-align:justify;
 }
 
 ul.navbar-nav a:hover {

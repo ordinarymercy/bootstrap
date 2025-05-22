@@ -11,80 +11,116 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 <script src="scripts.js"></script>
+
+<style>
+
+.pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 2px solid #000; 
+  margin-left: 0;
+  background-color: magenta;
+}
+
+#contactMe {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 2px solid #000; 
+  margin-left: 50px;
+  background-color: magenta;
+
+.pill-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.pill-nav a.active {
+  background-color: magenta;
+  color: black;
+  border-color: black;
+}
+
+.contactMe {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 2px solid #000; 
+  margin-left: 50px;
+  background-color: magenta;
+}
+</style>
 </head>
-
 <body>
- <!--Navigation-->
 <nav class="navbar navbar-light navbar-expand-lg">
-    <a class="navbar-brand"  style="text-indent:10px;" href="index.html">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-content">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="resume/resume.html">Resume</a>          
-        </li>        
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbar-content">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio/portfolio.html"">Portfolio</a>
-            </li>
-           
-        <div class="collapse navbar-collapse" id="navbar-content">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="FAQ/faq.html"">FAQ</a>
-            </li>
-   
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown" role="button" data-bs-toggle="dropdown">
-            Settings
-          </a>
-          <div class="dropdown-menu" id="settingsGroup">
-            <div class="settingsMenu"><a class="settingsMenu" "id="DarkModeToggle" href="javascript:darkMode()">Light / Dark Mode</a><br></div>
-            <div class="settingsMenu"><a class="settingsMenu" href="javascript:changeSizeByBtn('90%')">Small Font</a><br></div>
-            <div class="settingsMenu"><a class="settingsMenu" href="javascript:changeSizeByBtn('120%')">Medium Font</a><br></div>
-            <div class="settingsMenu"><a class="settingsMenu" href="javascript:changeSizeByBtn('160%')">Large Font</a><br></div>
-           </div>
-          </div>
-        </li>
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="resume/resume.html">Resume</a>
+          </li>        
+  
+          <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio/portfolio.html">Portfolio</a>
+              </li>
+             
+                <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="FAQ/faq.html">FAQ</a>
+              </li>
 
-          <ul class="navbar-nav">
-            <li class="pill-nav">
-        <div class="collapse navbar-collapse" id="navbar-content">
-        <div class="pill-nav">
-        <a class="active" href="contact/contact.html">Contact</a>
-        </li>
-        </ul>
-        </div>
-        </div>
-  </div>
-</nav>
+            <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="about/about.html">About</a>
+              </li>
 
-<div class="container d-flex justify-content-between" id="container">
+         <div class="pill-nav">
+        <a class="active" id="contactMe" href="contact/contact.html">Contact Me</a>
+    </div>
+  </nav>
+
+<div class="container d-flex mainContainer flex justify-content-between" id="container">
   <div class="row">
     <div class="col-md-4 m-4 align-top">
-      <img src="photo-of-me-01.jpg" alt="Photo of Me" class="img-fluid max-width: 100% max-height: auto rounded">
+      <img src="web-design-graphic-02.jpg" alt="Web Design" class="img-fluid max-width: 100% max-height: auto rounded">
     </div>
 
-    <div class="col-md-5 m-2 text-align-top">
-      <h1>Welcome to My Site</h1>
-      <p class="b-1 fontSizeClass" style="text-align: justify;">I am enrolled in the <a href="https://careertraining.ed2go.lsue.edu/training-programs/web-design-professional/" target="_blank">Web Design Professional Certificate course at Louisiana State University Eunice, via Ed2Go</a>, and will complete the program with an "A" before July of 2025.  I'm excited about my future as a web designer!</p>
+    <div class="col-md-5 m-2 p-2 text-align-top display:flex">
+      <h1>Why Do You Need a Professional Website?</h1>
+      <p class="b-1 fontSizeClass" style="text-align: justify;">If you aim to boost your revenue, having a website is crucial—it's as simple as that. Prospective customers are actively searching for businesses like yours online, and if you’re not present, or if you have a poorly designed website, they will choose a competitor instead. A well-designed website allows you to showcase your strengths, communicate who you are, what you offer, and why potential customers should choose you. It is a vital tool for any business aspiring to thrive in today’s market. Therefore, if you find yourself pondering, “Why do I need a website?” the answer is evident: it is essential for expanding your business.<br></p>
 
-      <p class="b1 fontSizeClass" style="text-align: justify;">You should consider hiring me because I excel at asking the right questions to gather the essential information needed to create a website that meets or exceeds your expectations. Additionally, I possess strong organizational skills, utilizing standard naming conventions and folder structures for each client. I have developed this website mostly from the ground up using HTML, CSS, JavaScript, and Bootstrap, without relying on any Content Management Systems like Wix or WordPress. The exception is that I used a Google Slideshow for my portfolio, as I found that the bootstrap options were limited. But, if I can accomplish this through manual coding, just imagine what I could achieve with a CMS!</p>
-
-      
-        <div class="pill-nav">
-        <a class="active" href="contact/contact.html">Contact Me</a>
+    <div class="fontSizeClass pill-nav align-left text-left b-1 fontSizeClass">
+    <a class="active" href="contact/contact.html">Contact Me</a>
+    </p>
+    </div>
+    </div>
    
-</div>
-</div>
+  </div>
 </div>
 
-
-
+<script>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
