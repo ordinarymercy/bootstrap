@@ -112,6 +112,3 @@ p{
   z-index: 1000; /* Optional: Ensure navbar is always on top */
 }
 
-.content {
-  padding-top: 60px; /*  Adjust this to your navbar height */
-}
