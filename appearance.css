@@ -107,6 +107,7 @@ p{
   position: sticky;
   top: 0;
   width: 100%;
+  height:fit-content;
  /* background-color: #f2f2f2; /* Example background color 
   padding: 10px;*/
   z-index: 1000; /* Optional: Ensure navbar is always on top */
