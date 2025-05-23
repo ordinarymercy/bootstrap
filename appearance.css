@@ -102,3 +102,16 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
 p{
   font-size: 18px;
 }
+
+.topnav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+ /* background-color: #f2f2f2; /* Example background color */
+  padding: 10px;
+  z-index: 1000; /* Optional: Ensure navbar is always on top */
+}
+
+.content {
+  padding-top: 60px; /*  Adjust this to your navbar height */
+}
