@@ -99,17 +99,17 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
         }
 }
 
-p{
-  font-size: 18px;
-}
-
+/*make navbar sticky*/
 .topnav {
   position: sticky;
   top: 0;
   width: 100%;
-  height:fit-content;
+  height:50xpx;
  /* background-color: #f2f2f2; /* Example background color 
   padding: 10px;*/
   z-index: 1000; /* Optional: Ensure navbar is always on top */
 }
 
+p{
+  font-size: 18px;
+}
