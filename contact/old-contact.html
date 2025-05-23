@@ -3,62 +3,154 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Home Page</title>
+<title>Contact Me</title>
 <!-- Bootstrap core CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
-<script src="../code.js"></script>
-<link href="../appearance.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../styles.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="../scripts.js"></script>
 
-<html>
-<div class="topnav" id="myTopnav">
-  <a href="../index.html" class="active">Home</a>
-  <a href="../resume/resume.html">Resume</a>
-  <a href="../portfolio/portfolio.html">Portfolio</a>
-  <a href="../FAQ/faq.html">FAQ</a>
-    <a href="../about/about.html">About</a>
-  <a href="contact.html">Contact Me</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+<style>
+
+
+.pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 2px solid #000; 
+  margin-left: 0;
+  background-color: magenta;
+}
+
+#contactMe {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 2px solid #000; 
+  margin-left: 50px;
+  background-color: magenta;
+
+.pill-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.pill-nav a.active {
+  background-color: magenta;
+  color: black;
+  border-color: black;
+}
+
+.contactMe {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 2px solid #000; 
+  margin-left: 50px;
+  background-color: magenta;
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
 
 <body>
+  <!--Navbar-->
+<nav class="navbar navbar-light navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../resume/resume.html">Resume</a>
+          </li>        
+  
+          <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../portfolio/portfolio.html">Portfolio</a>
+              </li>
+             
+                <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../FAQ/faq.html">FAQ</a>
+              </li>
+
+            <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../about/about.html">About</a>
+              </li>
+
+         <div class="pill-nav">
+        <a class="active" id="contactMe" href="contact.html">Contact Me</a>
+    </div>
+  </nav>
+
 <div class="container-fluid d-flex justify-content-start">
   <div class="row">
-    <div class="col-md-10 mt-5 align-top"></div>
-  </div>
+    <div class="col-md-10 mt-5 align-top">
+    </div>
+</div>
 <div class="col-md-8 m-0 text-align-top">
   <h1>Contact Me</h1>
 
 <form action="https://formsubmit.co/suelutz@gmail.com" method="POST">
   <div class="mt-3 row">
       <div class="col-md-3">
-        <label for="first-name">First Name *</label>
+        <label class="fontSizeClass" for="first-name">First Name *</label>
         <input type="text" class="form-control form-border" id="first-name" name="first-name" required>
       </div>
       <div class="col-md-3">
-        <label for="last-name">Last Name *</label>
+        <label class="fontSizeClass" for="last-name">Last Name *</label>
         <input type="text" class="form-control form-border" id="last-name" name="last-name" required>
       </div>
     </div>
     <div class="mt-3 row">
       <div class="col-md-6">
-        <label for="street-address">Street Address</label>
+        <label class="fontSizeClass" for="street-address">Street Address</label>
         <input type="text" class="form-control form-border" id="street-address" name="street-address">
       </div>
     </div>
     <div class="mt-3 row">
       <div class="col-md-3">
-        <label for="city">City</label>
+        <label class="fontSizeClass" for="city">City</label>
         <input type="text" class="form-control form-border" id="city" name="city">
       </div>
-    <div class="col-md-1">
-        <label for="state">State</label>
+      <div class="col-md-1">
+        <label class="fontSizeClass" for="state">State</label>
         <select class="form-select form-border" id="state" name="state">
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
@@ -114,31 +206,31 @@
         </select>
       </div>
       <div class="col-md-2">
-        <label for="postal-code">Zip</label>
+        <label class="fontSizeClass" for="postal-code">Zip</label>
         <input type="text" class="form-control form-border" id="postal-code" name="postal-code">
       </div>
     </div>
     <div class="mt-3 row">
       <div class="col-md-6">
-        <label for="country">Country</label>
+        <label class="fontSizeClass" for="country">Country</label>
         <input type="text" class="form-control form-border" id="country" name="country">
       </div>
     </div>
     <div class="mt-3 row">
       <div class="col-md-3">
-        <label for="phone">Phone</label>
+        <label class="fontSizeClass" for="phone">Phone</label>
         <input type="tel" class="form-control form-border" id="phone" name="phone">
       </div>
           <div class="col-md-3">
-        <label for="email">Email address *</label>
+        <label class="fontSizeClass" for="email">Email address *</label>
         <input type="email" class="form-control form-border" id="email" name="email" required>
       </div>
     </div>
    
       <div class="row mt-3 d-flex justify-content-start pb-10">
       <div class="col-md-6 text-align: start; pb-10">
-        <label class= "pb-10" for="comments">Comments *</label>
-           <textarea id="comments" name="comments" class="form-control form-border justify-content-center" required></textarea>
+        <label class="fontSizeClass pb-10" for="comments">Comments *</label>
+           <textarea id="comments" name="comments" class="form-control form-border fontSizeClass justify-content-center" required></textarea>
       </div>
     </div>
     <br>
@@ -161,6 +253,8 @@
    </div>
 
 
+
+
 <script>
 /* Make sure First Name gets focus upon page load*/
   window.onload = function() {
@@ -175,6 +269,7 @@ document.addEventListener('keydown', function(event) {
   }
 });
 </script>
+
 
 </body>
 </html>
