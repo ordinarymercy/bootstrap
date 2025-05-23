@@ -98,3 +98,7 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
         opacity:1;
         }
 }
+
+p{
+  font-size: 18px;
+}
