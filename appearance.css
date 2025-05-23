@@ -110,19 +110,6 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
   z-index: 1000; /* Optional: Ensure navbar is always on top */
 }
 
-/* Increase the height on larger screens */
-@media (min-width: 768px) {
-    .topnav {
-        height: 80px;
-    }
-}
-
-
-
-
-
-
-
 p{
   font-size: 18px;
 }
