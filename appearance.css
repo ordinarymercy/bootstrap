@@ -134,3 +134,12 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
   height: 30px;
 }
 
+
+/*next 2 blocks for contact.html*/
+#contactFormSubmit{
+  background-color: magenta;
+}
+
+.form-border{
+  border-color: magenta;
+}
