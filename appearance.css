@@ -61,25 +61,29 @@
 
 /* MAKE CONTACT PILL LARGER ON HOVER ----------------------------------*/
 .pill {
-  width: 150px;      /* Initial width */
-  height: 60px;     /* Initial height */
+  width: 140px;      /* Initial width */
+  height: 40px;     /* Initial height */
   border-radius: 15px; /* Make it a pill shape */
   background-color: magenta; /* Example background color */
   border-width: 2px;
   border-color: black;
   color: black;
-  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
+  margin-top:10px;
+  margin-bottom: 7px;
   cursor: pointer;
   border-radius: 35px;
+  vertical-align: bottom;
   transition: transform 0.3s ease; /* Smooth transition */
   font-weight:bold;
-  font-size:20px;
-  
+  font-size: 18px; 
+  display: flex;
+	justify-content:center;
+	align-items:center;
 }
+
 
 .pill:hover {
   transform: scale(1.2); 
@@ -99,17 +103,34 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
         }
 }
 
-/*make navbar sticky*/
-.topnav {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height:50px;
- /* background-color: #f2f2f2; /* Example background color 
-  padding: 10px;*/
-  z-index: 1000; /* Optional: Ensure navbar is always on top */
+
+/*next 3 blocks are some tweaks for resume.html*/
+.leftPanelInfo{
+  font-size: 16px;
+  line-height: 50%;
+  padding-left:20px;
 }
 
-p{
-  font-size: 18px;
+.resumeItem{
+  padding: 30px;
 }
+
+.resumeBox:hover{
+  box-shadow: 0 0 3px 3px magenta;
+}
+
+/* next 3 blocks are lines of code for faq.html */
+
+ .answer {
+  display: none;
+}
+.collapsible {
+  transition: height 0.3s ease-in-out;
+}
+
+.chevron {
+  float: right;
+  width: 30px;
+  height: 30px;
+}
+

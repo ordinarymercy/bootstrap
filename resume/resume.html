@@ -22,57 +22,73 @@
   <a href="../portfolio/portfolio.html">Portfolio</a>
   <a href="../FAQ/faq.html">FAQ</a>
     <a href="../about/about.html">About</a>
-  <a href="..contact/contact.html">Contact Me</a>
+  <button class="pill contactMe" style="vertical-align:center;"><a href="..contact/contact.html">Contact Me</a></button>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
+  <!--
+  <a href="..contact/contact.html">Contact Me</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>-->
 </div>
 
 <body>
-<div class="container-fluid d-flex justify-content-between">
+<!--<div class="container-fluid d-flex justify-content-between>-->
   <div class="row">
-    <div class="col-md-3">
-      <h3 class="fontSizeClass">SKILLS</h3>
-        <p class="fontSizeClass">HTML: 1 yr.</p>
-        <p class="fontSizeClass">CSS: 1 yr.</p>
-        <p class="fontSizeClass">Photoshop: 1 yr.</p>
-        <p class="fontSizeClass">Animate: 1 yr.</p>
-        <p class="fontSizeClass">Canva: 2 yr.</p>
-        <p class="fontSizeClass">Mailchimp: 2 yr.</p>
+    <div class="col-md-3" style="background-color: #D5FFFF;">
+      <h3 style="padding-left:20px;">SKILLS</h3>
+        <p class="leftPanelInfo">HTML: 1 yr.</p>
+        <p class="leftPanelInfo">CSS: 1 yr.</p>
+        <p class="leftPanelInfo">Photoshop: 1 yr.</p>
+        <p class="leftPanelInfo">Animate: 1 yr.</p>
+        <p class="leftPanelInfo">Canva: 2 yr.</p>
+        <p class="leftPanelInfo">Mailchimp: 2 yr.</p>
       <hr>
   
-      <h3 class="fontSizeClass">EDUCATION</h3>
-        <p class="fontSizeClass"><a href="https://careertraining.ed2go.lsue.edu/training-programs/web-design-professional/" target="_blank">Web Design Professional Certificate Course</a></p>
-        <p class="fontSizeClass">Louisiana State University Eunice, via Ed2Go</p>
-        <p class="fontSizeClass">July 2025</p>
+       <h3 style="padding-left:20px;">EDUCATION</h3>
+        <p class="leftPanelInfo"><a href="https://careertraining.ed2go.lsue.edu/training-programs/web-design-professional/" target="_blank">Web Design Professional Certificate Course</a></p>
+        <p class="leftPanelInfo">Louisiana State University Eunice, via Ed2Go</p>
+        <p class="leftPanelInfo">June 2025</p>
       <br>
-        <p class="fontSizeClass"><a href="center-restorative-approaches.pdf">Certificate in Restorative Approaches Training</a><p>
-        <p class="fontSizeClass">Center for Restorative Approaches</p>
-        <p class="fontSizeClass">January 2025</p>
+        <p class="leftPanelInfo"><a href="center-restorative-approaches.pdf">Certificate in Restorative Approaches Training</a><p>
+        <p class="leftPanelInfo">Center for Restorative Approaches</p>
+        <p class="leftPanelInfo">January 2025</p>
       <br>
-        <p class="fontSizeClass"><a href="digital-marketing-ecommerce.pdf">Certificate in Digital Marketing and E-Commerce</a>
-        <p class="fontSizeClass">Coursera.org</p>
-        <p class="fontSizeClass">June 2024</p>
+        <p class="leftPanelInfo"><a href="digital-marketing-ecommerce.pdf">Certificate in Digital Marketing and E-Commerce</a>
+        <p class="leftPanelInfo">Coursera.org</p>
+        <p class="leftPanelInfo">June 2024</p>
       <hr>
-      <h3 class="fontSizeClass">AWARDS</h3>
-        <p class="fontSizeClass"><a href="veteran-of-month.pdf" target="_blank">Veteran of the Month</a></p>
-        <p class="fontSizeClass">New Orleans VA Hospital</p>
-        <p class="fontSizeClass">January 2024</p>
+      <h3 style="padding-left:20px;"">AWARDS</h3>
+        <p class="leftPanelInfo"><a href="veteran-of-month.pdf" target="_blank">Veteran of the Month</a></p>
+        <p class="leftPanelInfo">New Orleans VA Hospital</p>
+        <p class="leftPanelInfo">January 2024</p>
       </div>
 
-<div class="col-md-6">
-  <h1>Susan Lutz</h1>
-  <h3>Web Designer</h3>
-    <p><a href="sue-lutz-resume.docx" download>Download my Resume in Word format.</a></p>
-
-<br>
-
+<div class="col-md-5 mx-7">
+<div class="row">
+<div class=resumeBox>
 <div class = "Right Panel shadow resumeItem">
-  <h3>About Me</h3>
-    <p style="text-align:justify;">Experienced with creating intuitive and visually appealing web designs that align with client goals. Utilizes industry-standard tools and technologies to deliver user-friendly websites.</p>
-  <br>
+<h1>Susan Lutz</h1>
+<h3>Web Designer</h3>
+<p><a href="sue-lutz-resume.docx" download>Download my Resume in Word format.</a></p>
+       <form action="/contact/contact.html">
+          <input type="submit" class="button pill" value="Contact Me"/>
+      </form> 
+</div>
+</div>
 </div>
 
+<div class="row">
+<div class="resumeBox">
+<div class = "Right Panel shadow resumeItem">
+<h3>About Me</h3>
+<p style="text-align:justify;">Experienced with creating intuitive and visually appealing web designs that align with client goals. Utilizes industry-standard tools and technologies to deliver user-friendly websites.</p>
+</div>
+</div>
+</div>
+
+<div class="resumeBox">
 <div class = "Right Panel shadow resumeItem">
 <h3>Volunteering</h3>
 <h6>Volunteer | Bastion Community of Resilience | August 2017 - Present</h6>
@@ -88,7 +104,9 @@
   </p>
   <br>
 </div>
+</div>
 
+<div class="resumeBox">
 <div class = "Right Panel shadow resumeItem">
 <h3>Work Experience</h3>
 <h6>Development Assistant | Bastion Community of Resilience | January 2024  - Present</h6>
@@ -138,13 +156,16 @@
   <h6>Skills: Microsoft Office, Google Workspace, Attention to Detail/h6>
   </p>
   <br>
-
+</div>
 </div>
 
-<div class = "Right Panel shadow resumeItem">
+<div class="resumeBox">
+<div class = "Right Panel shadow resumeItem resumeBox">
 <h3>Military Experience</h3>
 <h6>United States Air Force | Avionics Guidance & Control Technician | February 1994 - February 1998</h6>
 </div>
-
+</div>
+</div>
+</div>
 </body>
 </html>

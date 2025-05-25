@@ -37,7 +37,7 @@
 
 
 /*
-.contact:hover {
+.resumeItem:hover {
   color: magenta;
   text-shadow:30px 30px 30px #37e211;
   -moz-transition: all 0.2s ease-in;
@@ -47,7 +47,7 @@
   font-weight:bolder;
 }
 
-.contact {
+.resumeItem {
   color:black;
   font-weight: bolder;
   -moz-transition: all 0.2s ease-in;
@@ -55,7 +55,7 @@
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-*/
+
 .contactMe {
   display: inline-block;
   color: black;
