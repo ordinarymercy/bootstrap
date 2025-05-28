@@ -87,6 +87,13 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
 
 .nav-item{
   padding-left: 40px;
+  float: left;
+  display: flex; /* For better layout control */
+  justify-content: flex-start; /* Align pills to the left, if desired */
+  align-items: center; /* Vertically center the pills within the navbar */
+  margin-left: 0px;
+  width: 100px;
+  text-align: left;
 }
 
 
@@ -98,10 +105,9 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
     justify-content: flex-start; /* Align pills to the left, if desired */
     align-items: center; /* Vertically center the pills within the navbar */
     margin-left: 0px;
-    width: 100px;
+    width: 100px
 }
 
-/*
 .containerPill{
   margin-left: 0px !important;
   justify-content: start;
@@ -142,6 +148,7 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
     margin-right: 4px; /* Add some spacing between pills */
     transition: background-color 0.3s ease; /* Smooth background color change */
     border:3px solid black;
+    float: left;
     /*float: left;
     width: 120px;
     padding-right: 10px;*/
