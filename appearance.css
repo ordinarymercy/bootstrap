@@ -1,10 +1,202 @@
+/*fade in header*/
+h1{animation: 5s ease-out 0s 1 FadeIn;}
+@keyframes FadeIn {
+    0% {
+        opacity:0;
+        }
+    100% {
+        opacity:1;
+        }
+}
+
+/*next block for contact.html*/
+#contactFormSubmit{
+  background-color: magenta;
+  color: black;
+}
+
+/*next 3 blocks are some tweaks for resume.html*/
+.leftPanelInfo{
+  font-size: 16px;
+  line-height: 50%;
+  padding-left:20px;
+}
+
+.resumeItem{
+  padding: 30px;
+}
+
+.resumeBox:hover{
+  box-shadow: 0 0 3px 3px magenta;
+}
+
+
+/* next 3 blocks are lines of code for faq.html */
+
+ .answer {
+  display: none;
+}
+.collapsible {
+  transition: height 0.3s ease-in-out;
+}
+
+.chevron {
+  float: right;
+  width: 30px;
+  height: 30px;
+}
+
+
+.form-control {
+  border:1px solid magenta;
+}
+
+.form-border{
+  border:1px solid magenta;
+}
+
+#contactForm{
+  background-color: none;
+}
+
 /*NAVBAR---------------------------------------*/
 
 /* Add a magenta background color to the top navigation */
-.topnav {
+/*.topnav {
   background-color: magenta;
   overflow: hidden;
+  white-space: nowrap;
+}*/
+
+
+.navbar-nav{
+  background-color: magenta;
+  color: magenta;
+  width: 100%;
 }
+
+.navbar-nav li:hover {
+  color: black;
+  font-weight: bold;
+  /*border:3px solid black;*/
+}
+
+.container-fluid{
+  background-color: magenta;
+}
+
+.nav-item{
+  padding-left: 40px;
+}
+
+
+/*pill*/
+
+.pill-nav {
+    /*  If you want the pills to be horizontal, you can use inline-block and float: left for older browsers  */
+    display: flex; /* For better layout control */
+    justify-content: flex-start; /* Align pills to the left, if desired */
+    align-items: center; /* Vertically center the pills within the navbar */
+    margin-left: 0px;
+    width: 100px;
+}
+
+
+.containerPill{
+    margin-left: 0px !important;
+  justify-content: start;
+  display:grid;
+  align-items: start;
+  text-align: left;
+  align-self:flex-start;
+  float: left;
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+.containerPill {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: 40px;
+  width: 40px;
+  border: 0;
+  margin-left: 0px;
+}
+
+
+/*40px on navbar*/
+.pill-nav a {  
+    display: inline-block; /* Ensure each pill is a block-level element */
+    padding: 8px 16px; /* Add some padding to the pills */
+    margin-left: 40px;
+    border-radius: 22px; /* Round the corners for a pill effect */
+    text-decoration: none; /* Remove underlines from links */
+    color: black;
+    background-color: magenta; /* Dark background */
+    margin-right: 4px; /* Add some spacing between pills */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    border:3px solid black;
+    /*float: left;
+    width: 120px;
+    padding-right: 10px;*/
+ }
+
+ 
+.body-pill a{
+  margin-left: 0 !important;
+  background-color: magenta;
+  color: black;
+  border-radius: 22px;
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: 3px solid black;  
+}
+
+.body-pill a:hover{
+    background-color: lightblue; /* Darker background on hover and for active pills */
+    /*border:3px solid black;*/
+    transform: scale(1.2);   
+}
+
+.pill-nav a:hover, .pill-nav a.active .nav-item a:hover .body-pill a:hover{
+    background-color: lightblue; /* Darker background on hover and for active pills */
+    /*border:3px solid black;*/
+    transform: scale(1.2); 
+    margin-left: 0px;
+}
+
+.pill-nav a{
+  /*border:3px solid black;*/
+  color: black;
+  margin-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -15,7 +207,52 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; /* Required for text-overflow */
 }
+
+.topnav .i{
+  float: right;
+  position:unset;
+  white-space: nowrap;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .i{
+/*      position: absolute; */
+        display: inline-block;
+        right:0;
+        margin-right: 5px;
+    }
+
+   
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Change the font weight of links on hover */
 .topnav a:hover {
@@ -32,6 +269,7 @@
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+  float: right;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -43,20 +281,41 @@
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
+.i {
+  float: right;
+  display:inline;
+  position: absolute; /* Position the button in the top-right corner */
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    /* Styles for smaller screens */
+}
+
+/*trying to make hamburger on same line as menu*/
+.topnav-collapse {
     position: absolute;
-    right: 0;
-    top: 0;
+    width: 100%;
+    top: 100%;
+}
+
+@media only screen and (min-width: 1300px) {
+  .topnav {
+    display: none;
   }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+  .i {
+    display: flex;
   }
 }
+
+
+
 
 
 /* MAKE CONTACT PILL LARGER ON HOVER ----------------------------------*/
@@ -92,54 +351,11 @@
 }
 
 
-/*fade in header*/
-h1{animation: 5s ease-out 0s 1 FadeIn;}
-@keyframes FadeIn {
-    0% {
-        opacity:0;
-        }
-    100% {
-        opacity:1;
-        }
-}
 
 
-/*next 3 blocks are some tweaks for resume.html*/
-.leftPanelInfo{
-  font-size: 16px;
-  line-height: 50%;
-  padding-left:20px;
-}
-
-.resumeItem{
-  padding: 30px;
-}
-
-.resumeBox:hover{
-  box-shadow: 0 0 3px 3px magenta;
-}
-
-/* next 3 blocks are lines of code for faq.html */
-
- .answer {
-  display: none;
-}
-.collapsible {
-  transition: height 0.3s ease-in-out;
-}
-
-.chevron {
-  float: right;
-  width: 30px;
-  height: 30px;
-}
 
 
-/*next 2 blocks for contact.html*/
-#contactFormSubmit{
-  background-color: magenta;
-}
 
-.form-border{
-  border-color: magenta;
-}
+
+
+
