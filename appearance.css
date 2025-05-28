@@ -117,7 +117,7 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
 }
 
 
-
+/*
 .containerPill {
   display: flex;
   justify-content: left;
@@ -126,7 +126,7 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
   width: 40px;
   border: 0;
   margin-left: 0px;
-}
+}*/
 
 
 /*40px on navbar*/
@@ -177,185 +177,5 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
   color: black;
   margin-left: 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden; /* Required for text-overflow */
-}
-
-.topnav .i{
-  float: right;
-  position:unset;
-  white-space: nowrap;
-}
-
-
-
-@media screen and (max-width: 1024px) {
-    .i{
-/*      position: absolute; */
-        display: inline-block;
-        right:0;
-        margin-right: 5px;
-    }
-
-   
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Change the font weight of links on hover */
-.topnav a:hover {
-  color: black;
-  font-weight: bold;
-}
-
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: magenta;
-  /*color: white;*/
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-  float: right;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-.i {
-  float: right;
-  display:inline;
-  position: absolute; /* Position the button in the top-right corner */
-  top: 0;
-  right: 0;
-  padding: 10px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-@media (max-width: 768px) {
-    /* Styles for smaller screens */
-}
-
-/*trying to make hamburger on same line as menu*/
-.topnav-collapse {
-    position: absolute;
-    width: 100%;
-    top: 100%;
-}
-
-@media only screen and (min-width: 1300px) {
-  .topnav {
-    display: none;
-  }
-  .i {
-    display: flex;
-  }
-}
-
-
-
-
-
-/* MAKE CONTACT PILL LARGER ON HOVER ----------------------------------*/
-.pill {
-  width: 140px;      /* Initial width */
-  height: 40px;     /* Initial height */
-  border-radius: 15px; /* Make it a pill shape */
-  background-color: magenta; /* Example background color */
-  border-width: 2px;
-  border-color: black;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-top:10px;
-  margin-bottom: 7px;
-  cursor: pointer;
-  border-radius: 35px;
-  vertical-align: bottom;
-  transition: transform 0.3s ease; /* Smooth transition */
-  font-weight:bold;
-  font-size: 18px; 
-  display: flex;
-	justify-content:center;
-	align-items:center;
-}
-
-
-.pill:hover {
-  transform: scale(1.2); 
-  /* Enlarge on hover by 1.2 times */
-  /* Optional: Add a change in background color or other visual effects */
-}
-
-
-
-
-
-
-
-
 
 
