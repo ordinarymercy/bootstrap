@@ -134,7 +134,8 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
     display: inline-block; /* Ensure each pill is a block-level element */
     padding: 8px 16px; /* Add some padding to the pills */
     margin-left: 40px;
-    border-radius: 22px; /* Round the corners for a pill effect */
+    border-radius: 16px;
+    /*border-radius: 22px; /* Round the corners for a pill effect */
     text-decoration: none; /* Remove underlines from links */
     color: black;
     background-color: magenta; /* Dark background */
@@ -151,7 +152,8 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
   margin-left: 0 !important;
   background-color: magenta;
   color: black;
-  border-radius: 22px;
+ /* border-radius: 22px;*/
+  border-radius: 16px;
   display: inline-block;
   padding: 8px 16px;
   text-decoration: none;
