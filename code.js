@@ -30,4 +30,3 @@ function myFunction() {
     
   );
 
-/*for carousel*/
