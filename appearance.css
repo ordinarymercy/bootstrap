@@ -1,3 +1,12 @@
+    /* Media query for mobile devices (max-width: 767px) */
+    @media (max-width: 767px) {
+      .body {
+        padding: 20px; /* Different padding value for mobile */
+      }
+    }
+
+
+
 /*fade in header*/
 h1{animation: 5s ease-out 0s 1 FadeIn;}
 @keyframes FadeIn {
@@ -188,9 +197,3 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
 }
 
 
-    /* Media query for mobile devices (max-width: 767px) */
-    @media (max-width: 767px) {
-      .body {
-        padding: 20px; /* Different padding value for mobile */
-      }
-    }
