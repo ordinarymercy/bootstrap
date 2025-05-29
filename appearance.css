@@ -8,12 +8,14 @@
         /* Media query for mobile devices (max-width: 767px) */
     @media (max-width: 767px) {
       .mobileClass {
-        padding-left: 20px; /* Different padding value for mobile */
+        padding-left: 15px; /* Different padding value for mobile */
+        padding-right: 15px;
       }
     }
 
     .mobileClass{
-      padding-left: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
 
 
