@@ -5,6 +5,12 @@
       }
     }
 
+        /* Media query for mobile devices (max-width: 767px) */
+    @media (max-width: 767px) {
+      .mobileClass {
+        padding: 20px; /* Different padding value for mobile */
+      }
+    }
 
 
 /*fade in header*/
