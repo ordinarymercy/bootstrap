@@ -71,7 +71,7 @@ h1{animation: 5s ease-out 0s 1 FadeIn;}
 
 .navbar-nav{
   background-color: magenta;
-  color: magenta;
+  /*color: magenta;*/
   width: 100%;
 }
 
