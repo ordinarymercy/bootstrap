@@ -1,10 +1,21 @@
     /* Media query for mobile devices (max-width: 767px)
     @media (max-width: 767px) {
-      .mobileClass {
-        padding-left: 15px
-        padding-right: 15px;
-      }
-    }*/
+        .mobileClass: {
+          display: grid;
+          grid-template-columns: 2fr 1fr 1fr;}
+      }*/
+
+
+      /**ticket 5347428**/
+@media screen and (max-width:480px){
+    #city #state #postal-code {
+    width: 33.33%!important;
+    }}
+ 
+
+
+
+
 
     .mobileClass{
       display: inline-block;
